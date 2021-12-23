@@ -1,0 +1,352 @@
+.container .shadow .board .black, .container .shadow .board .white, .container .shadow .board .null {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  background-size: auto auto;
+  background-color: #03772a;
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 1px, #00ff40 1px, #00ff40 2px), repeating-linear-gradient(90deg, transparent, transparent 1px, #00ff40 1px, #00ff40 2px), repeating-linear-gradient(49deg, transparent, transparent 1px, #00ff40 1px, #00ff40 2px), repeating-linear-gradient(133deg, transparent, transparent 2px, #00ff40 2px, #00ff40 3px);
+  top: -1px;
+  left: 0px;
+  z-index: 1;
+  border: solid 3px black;
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black, .container .shadow .board .white, .container .shadow .board .null {
+    width: 45px;
+    height: 45px;
+    border: solid 1.5px black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black, .container .shadow .board .white, .container .shadow .board .null {
+    top: -1px;
+    left: -1px;
+    width: 22.5px;
+    height: 22.5px;
+    border: solid 1.5px black;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  position: relative;
+  width: auto;
+  height: 2000px;
+  background-image: url(image/png/haikei.png);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    height: 1000px;
+  }
+}
+
+.container .shadow {
+  -webkit-filter: drop-shadow(12px 6px 7px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(12px 6px 7px rgba(0, 0, 0, 0.6));
+  position: relative;
+  width: auto;
+  height: 2000px;
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow {
+    -webkit-filter: drop-shadow(6px 3px 3.5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(6px 3px 3.5px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow {
+    -webkit-filter: drop-shadow(3px 1.5px 1.75px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(3px 1.5px 1.75px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow {
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow {
+    height: 1000px;
+  }
+}
+
+.container .shadow .board {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 768px;
+  width: 768px;
+  margin-top: -768px;
+  margin-left: -384px;
+  background-color: black;
+  border: solid 10px black;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board {
+    width: 384px;
+    height: 384px;
+    margin-top: -384px;
+    margin-left: -204px;
+    border: solid 5px black;
+    border-bottom: solid 3px black;
+    border-right: solid 2px black;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board {
+    width: 204px;
+    height: 203px;
+    margin-top: -204px;
+    margin-left: -102px;
+    border: solid 5px black;
+    border-bottom: solid 3px black;
+    border-right: solid 2px black;
+  }
+}
+
+.container .shadow .board .black, .container .shadow .board .white, .container .shadow .board .null {
+  top: -2px;
+  left: -2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container .shadow .board .black .upblack, .container .shadow .board .white .upblack, .container .shadow .board .null .upblack {
+  background-color: black;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .upblack, .container .shadow .board .white .upblack, .container .shadow .board .null .upblack {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .upblack, .container .shadow .board .white .upblack, .container .shadow .board .null .upblack {
+    width: 17.5px;
+    height: 17.5px;
+    top: 2.5px;
+    left: 2.5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .upblack, .container .shadow .board .white .upblack, .container .shadow .board .null .upblack {
+    -webkit-filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .upblack, .container .shadow .board .white .upblack, .container .shadow .board .null .upblack {
+    -webkit-filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+  }
+}
+
+.container .shadow .board .black .downwhite, .container .shadow .board .white .downwhite, .container .shadow .board .null .downwhite {
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: -58px;
+  left: 10px;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .downwhite, .container .shadow .board .white .downwhite, .container .shadow .board .null .downwhite {
+    width: 35px;
+    height: 35px;
+    top: -28.5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .downwhite, .container .shadow .board .white .downwhite, .container .shadow .board .null .downwhite {
+    width: 17.5px;
+    height: 17.5px;
+    top: -13.5px;
+    left: 2.5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .downwhite, .container .shadow .board .white .downwhite, .container .shadow .board .null .downwhite {
+    -webkit-filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .downwhite, .container .shadow .board .white .downwhite, .container .shadow .board .null .downwhite {
+    -webkit-filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+  }
+}
+
+.container .shadow .board .black .downblack, .container .shadow .board .white .downblack, .container .shadow .board .null .downblack {
+  background-color: black;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: -58px;
+  left: 10px;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .downblack, .container .shadow .board .white .downblack, .container .shadow .board .null .downblack {
+    width: 35px;
+    height: 35px;
+    top: -28.5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .downblack, .container .shadow .board .white .downblack, .container .shadow .board .null .downblack {
+    width: 17.5px;
+    height: 17.5px;
+    top: -13.5px;
+    left: 2.5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .downblack, .container .shadow .board .white .downblack, .container .shadow .board .null .downblack {
+    -webkit-filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .downblack, .container .shadow .board .white .downblack, .container .shadow .board .null .downblack {
+    -webkit-filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+  }
+}
+
+.container .shadow .board .black .upwhite, .container .shadow .board .white .upwhite, .container .shadow .board .null .upwhite {
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.6));
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .upwhite, .container .shadow .board .white .upwhite, .container .shadow .board .null .upwhite {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .upwhite, .container .shadow .board .white .upwhite, .container .shadow .board .null .upwhite {
+    width: 17.5px;
+    height: 17.5px;
+    top: 2.5px;
+    left: 2.5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .upwhite, .container .shadow .board .white .upwhite, .container .shadow .board .null .upwhite {
+    -webkit-filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1.5px 2px 2.5px rgba(0, 0, 0, 0.6));
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .upwhite, .container .shadow .board .white .upwhite, .container .shadow .board .null .upwhite {
+    -webkit-filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(1px 1px 1.25px rgba(0, 0, 0, 0.6));
+  }
+}
+
+.container .shadow .board .black .upnull, .container .shadow .board .white .upnull, .container .shadow .board .null .upnull {
+  background-color: transparent;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .upnull, .container .shadow .board .white .upnull, .container .shadow .board .null .upnull {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .upnull, .container .shadow .board .white .upnull, .container .shadow .board .null .upnull {
+    width: 17.5px;
+    height: 17.5px;
+    top: 2.5px;
+    left: 2.5px;
+  }
+}
+/*# sourceMappingURL=sample.css.map */
