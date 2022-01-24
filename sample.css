@@ -349,4 +349,36 @@
     left: 2.5px;
   }
 }
+
+.container .shadow .board .black .uppoint, .container .shadow .board .white .uppoint, .container .shadow .board .null .uppoint {
+  background-color: gray;
+  position: relative;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .container .shadow .board .black .uppoint, .container .shadow .board .white .uppoint, .container .shadow .board .null .uppoint {
+    width: 10.5px;
+    height: 10.5px;
+    top: 16.66667px;
+    left: 16.66667px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .shadow .board .black .uppoint, .container .shadow .board .white .uppoint, .container .shadow .board .null .uppoint {
+    width: 5.25px;
+    height: 5.25px;
+    top: 8.33333px;
+    left: 8.33333px;
+  }
+}
 /*# sourceMappingURL=sample.css.map */

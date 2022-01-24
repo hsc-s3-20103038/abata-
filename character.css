@@ -1,0 +1,166 @@
+body {
+  margin: 0px;
+}
+
+.character {
+  position: relative;
+  width: 125px;
+  height: 260px;
+}
+
+.character .character_face {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/face.svg);
+  display: inline-block;
+}
+
+.character .character_face .eye {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/eye.svg);
+  display: inline-block;
+}
+
+.character .character_face .heir {
+  position: relative;
+  top: -270px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/heir.svg);
+  display: inline-block;
+}
+
+.character .character_face .mayu {
+  position: relative;
+  top: -535px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/mayu.svg);
+  display: inline-block;
+}
+
+.character .character_face .mouth {
+  position: relative;
+  top: -800px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/mouth.svg);
+  display: inline-block;
+}
+
+.character .character_face .grass {
+  position: relative;
+  top: -1070px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/grass.svg);
+  display: inline-block;
+}
+
+.character .character_body {
+  position: relative;
+  top: -1335px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/body.svg);
+  display: inline-block;
+}
+
+.character .character_body .character_hand .left1 {
+  position: relative;
+  top: -268px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/lefthand.svg);
+  display: inline-block;
+  -webkit-animation-name: album;
+          animation-name: album;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.character .character_body .character_hand .right1 {
+  position: relative;
+  top: -2px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/hand.svg);
+  display: inline-block;
+  -webkit-transform-origin: 195px  bottom;
+          transform-origin: 195px  bottom;
+  -webkit-animation: 3s linear infinite hand_ANIME;
+          animation: 3s linear infinite hand_ANIME;
+}
+
+.character .character_body .character_hand .right2 {
+  position: relative;
+  top: -536px;
+  left: 0px;
+  width: 400px;
+  height: 260px;
+  background-image: url(image/svg/ude.svg);
+  display: inline-block;
+}
+
+@-webkit-keyframes hand_ANIME {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes hand_ANIME {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=character.css.map */

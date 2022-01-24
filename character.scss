@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+}
+.character{
+    position:relative;
+    width: 125px;
+    height: 260px;
+    .character_face{
+        position: relative;
+        top:0px;
+        left: 0px;
+        width: 400px;
+        height: 260px;
+        background-image: url(image/svg/face.svg);
+        display: inline-block;
+        .eye{
+            position: relative;
+            top:0px;
+            left: 0px;
+            width: 400px;
+            height: 260px;
+            background-image: url(image/svg/eye.svg);
+            display: inline-block;
+        }
+        .heir{
+            position: relative;
+            top:-270px;
+            left: 0px;
+            width: 400px;
+            height: 260px;
+            background-image: url(image/svg/heir.svg);
+            display: inline-block;
+        }
+        .mayu{
+            position: relative;
+            top:-535px;
+            left: 0px;
+            width: 400px;
+            height: 260px;
+            background-image: url(image/svg/mayu.svg);
+            display: inline-block;
+        }
+        .mouth{
+            position: relative;
+            top:-800px;
+            left: 0px;
+            width: 400px;
+            height: 260px;
+            background-image: url(image/svg/mouth.svg);
+            display: inline-block;
+        }
+        
+        .grass{
+            position: relative;
+            top:-1070px;
+            left: 0px;
+            width: 400px;
+            height: 260px;
+            background-image: url(image/svg/grass.svg);
+            display: inline-block;
+        }
+    }
+    .character_body{
+        position: relative;
+        top:-1335px;
+        left: 0px;
+        width: 400px;
+        height: 260px;
+        background-image: url(image/svg/body.svg);
+        display: inline-block;
+        .character_hand{
+            .left1{
+                position: relative;
+                top:-268px;
+                left: 0px;
+                width: 400px;
+                height: 260px;
+                background-image: url(image/svg/lefthand.svg);
+                display: inline-block;
+                animation-name: album;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+            }
+            .right1{
+                position: relative;
+                top:-2px;
+                left: 0px;
+                width: 400px;
+                height: 260px;
+                background-image: url(image/svg/hand.svg);
+                display: inline-block;
+                transform-origin: 195px  bottom;
+                animation:3s linear infinite hand_ANIME;
+            }
+            .right2{
+                position: relative;
+                top:-536px;
+                left: 0px;
+                width: 400px;
+                height: 260px;
+                background-image: url(image/svg/ude.svg);
+                display: inline-block;
+            }
+              @keyframes hand_ANIME{
+                0%{ transform:rotate(0deg); }
+                25%{ transform:rotate(10deg); }
+                50%{ transform:rotate(0deg); }
+                75%{ transform:rotate(10deg); }
+                100%{ transform:rotate(0deg); }
+              }
+        }
+    }
+}

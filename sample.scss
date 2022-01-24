@@ -61,7 +61,7 @@ $color:chartreuse;
     }
   }
 @mixin updisc($color:black,$position: relative, $radius: 50%,$heigth:70px,
-            $width:70px,$top:10px,$left:10px,) {
+            $width:70px,$top:10px,$left:10px,$price:1) {
     background-color: $color;
     position: $position;
     border-radius: $radius;
@@ -72,12 +72,12 @@ $color:chartreuse;
     z-index: 3;
     transition: 1s;
     @media screen and (max-width: 800px) {
-        width: $width/2; height: $heigth/2;
-        top:$top/2; left: $left/2;
+        width: $width/2*$price; height: $heigth/2*$price;
+        top:$top/2/$price; left: $left/2/$price;
     }
     @media screen and (max-width: 400px) {
-        width: $width/4; height: $heigth/4;
-        top:$top/4; left: $left/4;
+        width: $width/4*$price; height: $heigth/4*$price;
+        top:$top/4/$price; left: $left/4/$price;
     }
   }
 *{
@@ -159,7 +159,12 @@ $color:chartreuse;
                     .upnull{
                         @include updisc(transparent);
                     }
+                    .uppoint{
+                        @include updisc(gray,relative,50%,70px,
+                        70px,10px,10px,0.3);
+                        opacity: 0.5;
+                    }
+                }
             }
         }
     }
-}
